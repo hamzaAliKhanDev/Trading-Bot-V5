@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<!-- Define base log path from application.properties -->
+		<Property name="logBasePath">${spring:Log4jPath}</Property>
+	</Properties>
+
+	<Appenders>
+		<!-- Error Logs -->
+		<RollingFile name="X" fileName="${logBasePath}/ErrorLogs/Error_Log.log"
+			filePattern="${logBasePath}/ErrorLogs/Error_Log-%i.log">
+			<PatternLayout
+				pattern="[%d{dd MMM yyyy HH:mm:ss,SSS} %-5p %c{1} -%F]- %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingFile>
+
+		<!-- Console Logs -->
+		<RollingFile name="Y"
+			fileName="${logBasePath}/ConsoleLogs/Console_Log.log"
+			filePattern="${logBasePath}/ConsoleLogs/Console_Log-%i.log">
+			<PatternLayout
+				pattern="[%d{dd MMM yyyy HH:mm:ss,SSS} %-5p %c{1} -%F]- %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingFile>
+
+		<!-- Json Logs -->
+		<RollingFile name="Z" fileName="${logBasePath}/JsonLogs/Json_Log.log"
+			filePattern="${logBasePath}/JsonLogs/Json_Log-%i.log">
+			<PatternLayout
+				pattern="[%d{dd MMM yyyy HH:mm:ss,SSS} %-5p %c{1} -%F]- %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingFile>
+
+		<!-- Server Logs -->
+		<RollingFile name="R"
+			fileName="${logBasePath}/ServerLogs/Server_Log.log"
+			filePattern="${logBasePath}/ServerLogs/Server_Log-%i.log">
+			<PatternLayout
+				pattern="[%d{dd MMM yyyy HH:mm:ss,SSS} %-5p %c{1} -%F]- %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingFile>
+		
+		<!-- Transaction Logs -->
+		<RollingFile name="T"
+			fileName="${logBasePath}/TransactionLogs/Transaction_Log.log"
+			filePattern="${logBasePath}/TransactionLogs/Transaction_Log-%i.log">
+			<PatternLayout
+				pattern="[%d{dd MMM yyyy HH:mm:ss,SSS} %-5p %c{1} -%F]- %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingFile>
+		
+	</Appenders>
+
+	<Loggers>
+		<!-- Error Logs -->
+		<Logger name="Error" level="DEBUG" additivity="false">
+			<AppenderRef ref="X" />
+		</Logger>
+
+		<!-- Console Logs -->
+		<Logger name="Console" level="DEBUG" additivity="false">
+			<AppenderRef ref="Y" />
+		</Logger>
+
+		<!-- Json Logs -->
+		<Logger name="Json" level="DEBUG" additivity="false">
+			<AppenderRef ref="Z" />
+		</Logger>
+		
+		<!-- Transaction Logs -->
+		<Logger name="Transaction" level="DEBUG" additivity="false">
+			<AppenderRef ref="T" />
+		</Logger>
+
+		<!-- Server Logs -->
+		<Logger name="org.apache.catalina" level="INFO" additivity="false">
+			<AppenderRef ref="R" />
+		</Logger>
+
+		<Logger name="org.apache.tomcat" level="INFO" additivity="false">
+			<AppenderRef ref="R" />
+		</Logger>
+
+		<Logger name="org.springframework.boot" level="INFO" additivity="false">
+			<AppenderRef ref="R" />
+		</Logger>
+
+		<!-- Root Logger -->
+		<Root level="ERROR">
+			<AppenderRef ref="X" />
+			<AppenderRef ref="Y" />
+			<AppenderRef ref="Z" />
+			<AppenderRef ref="T" />
+		</Root>
+
+	</Loggers>
+</Configuration>

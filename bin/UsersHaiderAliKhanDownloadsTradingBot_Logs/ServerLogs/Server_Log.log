@@ -1,0 +1,1434 @@
+[16 Aug 2025 17:53:03,183 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 17:53:03,222 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 17:53:03,222 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 17:53:03,328 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 17:53:03,331 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2829 ms
+[16 Aug 2025 17:53:04,950 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 17:53:06,308 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 17:53:06,363 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.RuntimeException: Failed to parse latest price
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:41) ~[classes/:?]
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:29) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+	at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asDouble()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:38) ~[classes/:?]
+	... 22 more
+[16 Aug 2025 17:53:06,370 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 17:53:06,440 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 17:58:58,350 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 17:58:58,383 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 17:58:58,383 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 17:58:58,476 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 17:58:58,480 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2525 ms
+[16 Aug 2025 17:59:00,288 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 17:59:02,001 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 17:59:02,031 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.RuntimeException: Failed to parse latest price
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:41) ~[classes/:?]
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:29) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+	at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asDouble()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:38) ~[classes/:?]
+	... 22 more
+[16 Aug 2025 17:59:02,038 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 17:59:02,091 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:06:43,517 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:06:43,556 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:06:43,557 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:06:43,675 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:06:43,679 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2491 ms
+[16 Aug 2025 18:06:45,124 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:06:46,351 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 18:06:46,396 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.RuntimeException: Failed to parse latest price
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:43) ~[classes/:?]
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:29) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+	at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asDouble()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:40) ~[classes/:?]
+	... 22 more
+[16 Aug 2025 18:06:46,401 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 18:06:46,438 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:14:43,129 WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer -DuplicateJsonObjectContextCustomizerFactory.java]- 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/org/json/json/20240303/json-20240303.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16 Aug 2025 18:14:48,274 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 18:14:48,307 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.RuntimeException: Failed to parse latest price
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:43) ~[classes/:?]
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:29) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asDouble()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:40) ~[classes/:?]
+	... 107 more
+[16 Aug 2025 18:17:41,739 WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer -DuplicateJsonObjectContextCustomizerFactory.java]- 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/org/json/json/20240303/json-20240303.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16 Aug 2025 18:17:46,681 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 18:17:46,716 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.RuntimeException: Failed to parse latest price
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:43) ~[classes/:?]
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:29) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.4.jar:3.5.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.9.jar:6.2.9]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) [surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.3.jar:3.5.3]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asDouble()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.deltaexchange.trade.service.PriceService.getLatestPrice(PriceService.java:40) ~[classes/:?]
+	... 107 more
+[16 Aug 2025 18:20:47,163 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:20:47,194 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:20:47,195 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:20:47,272 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:20:47,274 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2056 ms
+[16 Aug 2025 18:20:48,665 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:20:50,662 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Aug 2025 18:20:50,685 ERROR SpringApplication -SpringApplication.java]- Application run failed
+org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from GET https://api.india.delta.exchange/v2/positions/margined
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322) ~[spring-webflux-6.2.9.jar:6.2.9]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ? 401 UNAUTHORIZED from GET https://api.india.delta.exchange/v2/positions/margined [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322) ~[spring-webflux-6.2.9.jar:6.2.9]
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214) ~[spring-webflux-6.2.9.jar:6.2.9]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2096) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413) ~[reactor-netty-core-1.2.8.jar:1.2.8]
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455) ~[reactor-netty-core-1.2.8.jar:1.2.8]
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509) ~[reactor-netty-core-1.2.8.jar:1.2.8]
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:821) ~[reactor-netty-http-1.2.8.jar:1.2.8]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.2.8.jar:1.2.8]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1519) ~[netty-handler-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1377) ~[netty-handler-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1428) ~[netty-handler-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530) ~[netty-codec-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469) ~[netty-codec-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:796) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.123.Final.jar:4.1.123.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.123.Final.jar:4.1.123.Final]
+		at java.base/java.lang.Thread.run(Thread.java:842) ~[?:?]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.7.8.jar:3.7.8]
+		at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.7.8.jar:3.7.8]
+		at com.deltaexchange.trade.service.PositionService.getBTCPositionDetails(PositionService.java:46) ~[classes/:?]
+		at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:31) ~[classes/:?]
+		at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+		at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+		at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+		at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+		at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+		at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+		at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+		at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+[16 Aug 2025 18:20:50,697 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 18:20:50,733 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:27:07,573 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:27:07,608 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:27:07,611 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:27:07,703 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:27:07,706 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2434 ms
+[16 Aug 2025 18:27:09,002 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:27:45,523 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 18:27:45,569 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:29:03,907 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:29:03,939 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:29:03,940 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:29:04,030 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:29:04,030 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2269 ms
+[16 Aug 2025 18:29:05,856 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:29:38,364 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 18:29:38,471 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:32:54,492 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:32:54,517 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:32:54,517 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:32:54,592 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:32:54,601 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2158 ms
+[16 Aug 2025 18:32:56,108 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:33:19,611 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[16 Aug 2025 18:33:19,758 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[16 Aug 2025 18:37:23,273 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:37:23,310 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:37:23,310 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:37:23,391 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:37:23,392 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2171 ms
+[16 Aug 2025 18:37:24,637 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:46:09,641 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Aug 2025 18:46:09,670 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Aug 2025 18:46:09,670 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Aug 2025 18:46:09,744 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Aug 2025 18:46:09,744 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2142 ms
+[16 Aug 2025 18:46:10,988 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Aug 2025 18:49:40,046 WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer -DuplicateJsonObjectContextCustomizerFactory.java]- 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/HaiderAliKhan/.m2/repository/org/json/json/20240303/json-20240303.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[17 Aug 2025 19:47:45,763 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 19:47:45,793 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 19:47:45,793 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 19:47:45,871 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 19:47:45,881 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2528 ms
+[17 Aug 2025 19:47:47,471 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Aug 2025 19:51:32,141 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 19:51:32,171 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 19:51:32,171 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 19:51:32,264 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 19:51:32,265 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2185 ms
+[17 Aug 2025 19:51:33,595 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Aug 2025 20:17:51,324 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 20:17:51,378 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 20:17:51,378 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 20:17:51,482 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 20:17:51,483 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2350 ms
+[17 Aug 2025 20:17:53,152 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Aug 2025 20:20:58,204 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 20:20:58,261 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 20:20:58,262 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 20:20:58,432 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 20:20:58,432 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2125 ms
+[17 Aug 2025 20:20:59,856 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Aug 2025 20:26:31,598 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 20:26:31,636 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 20:26:31,639 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 20:26:31,718 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 20:26:31,732 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1886 ms
+[17 Aug 2025 20:26:32,951 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Aug 2025 20:28:09,400 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Aug 2025 20:28:09,431 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Aug 2025 20:28:09,431 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Aug 2025 20:28:09,509 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Aug 2025 20:28:09,520 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2096 ms
+[17 Aug 2025 20:28:10,782 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 19:35:47,663 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:35:47,720 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:35:47,720 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:35:47,894 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:35:47,902 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3659 ms
+[15 Nov 2025 19:35:50,196 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 19:38:59,449 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:38:59,485 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:38:59,485 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:38:59,613 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:38:59,613 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2895 ms
+[15 Nov 2025 19:39:01,532 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15 Nov 2025 19:39:01,556 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 19:39:01,589 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15 Nov 2025 19:39:36,899 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:39:36,929 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:39:36,929 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:39:37,033 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:39:37,038 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2447 ms
+[15 Nov 2025 19:39:39,032 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15 Nov 2025 19:39:39,079 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 19:39:39,134 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15 Nov 2025 19:40:19,614 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:40:19,656 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:40:19,656 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:40:19,758 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:40:19,766 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2870 ms
+[15 Nov 2025 19:40:22,138 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15 Nov 2025 19:40:22,184 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 19:40:22,263 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15 Nov 2025 19:43:04,314 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:43:04,342 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:43:04,342 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:43:04,425 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:43:04,426 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1952 ms
+[15 Nov 2025 19:43:05,809 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 19:52:18,055 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:52:18,092 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:52:18,093 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:52:18,181 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:52:18,181 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2285 ms
+[15 Nov 2025 19:52:19,786 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 19:59:24,341 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 19:59:24,370 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 19:59:24,371 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 19:59:24,448 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 19:59:24,450 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2232 ms
+[15 Nov 2025 19:59:25,679 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:02:18,558 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:02:18,597 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:02:18,598 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:02:18,695 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:02:18,697 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2628 ms
+[15 Nov 2025 20:02:20,122 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:04:59,933 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:04:59,964 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:04:59,964 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:05:00,046 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:05:00,054 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2183 ms
+[15 Nov 2025 20:05:01,279 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:20:35,123 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:20:35,158 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:20:35,158 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:20:35,244 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:20:35,244 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2298 ms
+[15 Nov 2025 20:20:36,670 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:25:45,214 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:25:45,246 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:25:45,248 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:25:45,324 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:25:45,327 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2489 ms
+[15 Nov 2025 20:25:46,874 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:30:21,326 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:30:21,353 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:30:21,353 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:30:21,440 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:30:21,443 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2132 ms
+[15 Nov 2025 20:30:22,276 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'botRunner': Unsatisfied dependency expressed through field 'startBot': Error creating bean with name 'startBot': Unsatisfied dependency expressed through field 'positionService': Error creating bean with name 'positionService' defined in file [C:\Users\HaiderAliKhan\Downloads\STS Workspace\Trading_Bot\target\classes\com\deltaexchange\trade\service\PositionService.class]: Failed to instantiate [com.deltaexchange.trade.service.PositionService]: Constructor threw exception
+[15 Nov 2025 20:30:22,282 INFO  StandardService -DirectJDKLog.java]- Stopping service [Tomcat]
+[15 Nov 2025 20:30:22,309 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 20:30:22,332 ERROR SpringApplication -SpringApplication.java]- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'botRunner': Unsatisfied dependency expressed through field 'startBot': Error creating bean with name 'startBot': Unsatisfied dependency expressed through field 'positionService': Error creating bean with name 'positionService' defined in file [C:\Users\HaiderAliKhan\Downloads\STS Workspace\Trading_Bot\target\classes\com\deltaexchange\trade\service\PositionService.class]: Failed to instantiate [com.deltaexchange.trade.service.PositionService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+	at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'startBot': Unsatisfied dependency expressed through field 'positionService': Error creating bean with name 'positionService' defined in file [C:\Users\HaiderAliKhan\Downloads\STS Workspace\Trading_Bot\target\classes\com\deltaexchange\trade\service\PositionService.class]: Failed to instantiate [com.deltaexchange.trade.service.PositionService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'positionService' defined in file [C:\Users\HaiderAliKhan\Downloads\STS Workspace\Trading_Bot\target\classes\com\deltaexchange\trade\service\PositionService.class]: Failed to instantiate [com.deltaexchange.trade.service.PositionService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 22 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.deltaexchange.trade.service.PositionService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	ppublic cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	Return type for the method is missing
+
+	at com.deltaexchange.trade.service.PositionService.<init>(PositionService.java:25) ~[classes/:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1683) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 22 more
+[15 Nov 2025 20:31:27,339 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:31:27,364 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:31:27,364 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:31:27,438 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:31:27,446 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2251 ms
+[15 Nov 2025 20:31:28,649 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:33:37,461 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:33:37,497 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:33:37,498 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:33:37,596 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:33:37,596 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2420 ms
+[15 Nov 2025 20:33:39,509 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 20:35:29,021 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 20:35:29,061 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 20:35:29,061 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 20:35:29,150 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 20:35:29,154 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2457 ms
+[15 Nov 2025 20:35:30,421 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:02:54,685 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:02:54,750 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:02:54,750 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:02:54,916 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:02:54,928 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3545 ms
+[15 Nov 2025 21:02:57,302 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:02:57,343 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 21:02:57,429 ERROR SpringApplication -SpringApplication.java]- Application run failed
+java.lang.Error: Unresolved compilation problems: 
+	Unhandled exception type IOException
+	Unhandled exception type InterruptedException
+	Unhandled exception type NoSuchAlgorithmException
+	Unhandled exception type InvalidKeyException
+
+	at com.deltaexchange.trade.service.StartBot.startBotMain(StartBot.java:42) ~[classes/:?]
+	at com.deltaexchange.trade.service.BotRunner.run(BotRunner.java:18) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.5.4.jar:3.5.4]
+	at com.deltaexchange.trade.TradingBotApplication.main(TradingBotApplication.java:12) [classes/:?]
+[15 Nov 2025 21:02:57,452 INFO  GracefulShutdown -GracefulShutdown.java]- Commencing graceful shutdown. Waiting for active requests to complete
+[15 Nov 2025 21:02:57,577 INFO  GracefulShutdown -GracefulShutdown.java]- Graceful shutdown complete
+[15 Nov 2025 21:08:02,715 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:08:02,742 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:08:02,742 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:08:02,838 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:08:02,846 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2761 ms
+[15 Nov 2025 21:08:04,632 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:10:04,348 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:10:04,400 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:10:04,400 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:10:04,544 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:10:04,549 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3370 ms
+[15 Nov 2025 21:10:06,577 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:22:45,245 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:22:45,315 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:22:45,315 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:22:45,437 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:22:45,437 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2588 ms
+[15 Nov 2025 21:22:47,224 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:36:19,627 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:36:19,671 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:36:19,672 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:36:19,783 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:36:19,783 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2498 ms
+[15 Nov 2025 21:36:21,696 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:38:55,169 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:38:55,209 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:38:55,209 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:38:55,348 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:38:55,348 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3422 ms
+[15 Nov 2025 21:38:57,750 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:53:24,564 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:53:24,628 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:53:24,629 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:53:24,810 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:53:24,824 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2755 ms
+[15 Nov 2025 21:53:26,501 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 21:53:58,927 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 21:53:58,960 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 21:53:58,960 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 21:53:59,042 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 21:53:59,045 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3258 ms
+[15 Nov 2025 21:54:00,611 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:05:27,855 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:05:27,893 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:05:27,893 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:05:28,062 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:05:28,069 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2250 ms
+[15 Nov 2025 23:05:30,045 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:07:09,636 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:07:09,697 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:07:09,698 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:07:09,839 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:07:09,844 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2222 ms
+[15 Nov 2025 23:07:11,126 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:07:52,704 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:07:52,736 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:07:52,736 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:07:52,823 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:07:52,823 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1967 ms
+[15 Nov 2025 23:07:54,056 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:08:44,544 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:08:44,582 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:08:44,582 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:08:44,718 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:08:44,724 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2200 ms
+[15 Nov 2025 23:08:46,171 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:11:32,670 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:11:32,703 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:11:32,703 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:11:32,807 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:11:32,810 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2547 ms
+[15 Nov 2025 23:11:34,420 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:23:02,949 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:23:02,986 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:23:02,987 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:23:03,078 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:23:03,081 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2649 ms
+[15 Nov 2025 23:23:04,319 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15 Nov 2025 23:23:04,344 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 23:23:04,380 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15 Nov 2025 23:24:55,150 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:24:55,199 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:24:55,199 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:24:55,281 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:24:55,284 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2097 ms
+[15 Nov 2025 23:24:56,735 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[15 Nov 2025 23:24:56,757 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15 Nov 2025 23:24:56,795 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[15 Nov 2025 23:25:59,241 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:25:59,274 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:25:59,274 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:25:59,373 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:25:59,376 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2085 ms
+[15 Nov 2025 23:26:00,810 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:27:11,249 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:27:11,289 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:27:11,289 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:27:11,447 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:27:11,447 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2126 ms
+[15 Nov 2025 23:27:12,947 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:27:52,995 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:27:53,022 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:27:53,022 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:27:53,106 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:27:53,108 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2124 ms
+[15 Nov 2025 23:27:54,352 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:42:44,808 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:42:44,862 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:42:44,863 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:42:45,038 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:42:45,041 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2306 ms
+[15 Nov 2025 23:42:46,312 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:43:51,480 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:43:51,520 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:43:51,520 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:43:51,609 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:43:51,610 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2097 ms
+[15 Nov 2025 23:43:53,049 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:45:35,514 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:45:35,549 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:45:35,549 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:45:35,639 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:45:35,639 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1966 ms
+[15 Nov 2025 23:45:36,931 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[15 Nov 2025 23:48:36,438 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[15 Nov 2025 23:48:36,471 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[15 Nov 2025 23:48:36,474 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[15 Nov 2025 23:48:36,560 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[15 Nov 2025 23:48:36,560 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2059 ms
+[15 Nov 2025 23:48:37,798 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Nov 2025 17:53:01,572 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Nov 2025 17:53:01,605 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Nov 2025 17:53:01,606 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Nov 2025 17:53:01,704 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Nov 2025 17:53:01,707 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2187 ms
+[16 Nov 2025 17:53:03,285 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Nov 2025 17:56:14,402 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Nov 2025 17:56:14,436 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Nov 2025 17:56:14,437 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Nov 2025 17:56:14,522 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Nov 2025 17:56:14,522 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2234 ms
+[16 Nov 2025 17:56:15,763 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[16 Nov 2025 18:35:36,431 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Nov 2025 18:35:36,466 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Nov 2025 18:35:36,467 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Nov 2025 18:35:36,572 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Nov 2025 18:35:36,572 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1996 ms
+[16 Nov 2025 18:35:37,531 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'botRunner': Unsatisfied dependency expressed through field 'startBot': Error creating bean with name 'startBot': Unsatisfied dependency expressed through field 'globalVar': No qualifying bean of type 'com.deltaexchange.trade.config.DeltaDto' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[16 Nov 2025 18:35:37,536 INFO  StandardService -DirectJDKLog.java]- Stopping service [Tomcat]
+[16 Nov 2025 18:35:37,558 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[16 Nov 2025 18:35:37,589 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field globalVar in com.deltaexchange.trade.service.StartBot required a bean of type 'com.deltaexchange.trade.config.DeltaDto' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.deltaexchange.trade.config.DeltaDto' in your configuration.
+
+[16 Nov 2025 18:36:29,270 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[16 Nov 2025 18:36:29,301 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[16 Nov 2025 18:36:29,302 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[16 Nov 2025 18:36:29,389 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[16 Nov 2025 18:36:29,392 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2738 ms
+[16 Nov 2025 18:36:30,731 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 01:37:47,696 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 01:37:47,738 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 01:37:47,739 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 01:37:47,866 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 01:37:47,870 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2573 ms
+[17 Nov 2025 01:37:48,847 WARN  AnnotationConfigServletWebServerApplicationContext -AbstractApplicationContext.java]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'botRunner': Unsatisfied dependency expressed through field 'startBot': Error creating bean with name 'startBot': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'checkAndOrderService': Unsatisfied dependency expressed through field 'placeOrder': No qualifying bean of type 'com.deltaexchange.trade.service.PlaceOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[17 Nov 2025 01:37:48,858 INFO  StandardService -DirectJDKLog.java]- Stopping service [Tomcat]
+[17 Nov 2025 01:37:48,893 INFO  ConditionEvaluationReportLogger -ConditionEvaluationReportLogger.java]- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[17 Nov 2025 01:37:48,927 ERROR LoggingFailureAnalysisReporter -LoggingFailureAnalysisReporter.java]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field placeOrder in com.deltaexchange.trade.service.CheckAndOrderService required a bean of type 'com.deltaexchange.trade.service.PlaceOrderService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.deltaexchange.trade.service.PlaceOrderService' in your configuration.
+
+[17 Nov 2025 01:40:45,867 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 01:40:45,895 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 01:40:45,896 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 01:40:45,983 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 01:40:45,985 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1986 ms
+[17 Nov 2025 01:40:47,697 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 01:48:36,429 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 01:48:36,452 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 01:48:36,452 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 01:48:36,525 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 01:48:36,528 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2577 ms
+[17 Nov 2025 01:48:38,207 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 01:55:10,866 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 01:55:10,906 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 01:55:10,907 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 01:55:11,023 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 01:55:11,026 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3183 ms
+[17 Nov 2025 01:55:12,330 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 01:58:55,347 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 01:58:55,369 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 01:58:55,369 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 01:58:55,435 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 01:58:55,443 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2425 ms
+[17 Nov 2025 01:58:56,685 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 02:13:39,526 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 02:13:39,571 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 02:13:39,572 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 02:13:39,728 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 02:13:39,762 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2126 ms
+[17 Nov 2025 02:13:41,026 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[17 Nov 2025 02:32:35,353 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[17 Nov 2025 02:32:35,381 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[17 Nov 2025 02:32:35,381 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[17 Nov 2025 02:32:35,463 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[17 Nov 2025 02:32:35,472 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2347 ms
+[17 Nov 2025 02:32:36,825 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 22:28:43,571 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 22:28:43,604 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 22:28:43,604 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 22:28:43,700 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 22:28:43,702 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2300 ms
+[18 Nov 2025 22:28:45,554 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 22:30:08,131 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 22:30:08,161 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 22:30:08,161 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 22:30:08,280 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 22:30:08,282 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2131 ms
+[18 Nov 2025 22:30:10,372 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 22:35:14,667 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 22:35:14,694 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 22:35:14,695 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 22:35:14,781 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 22:35:14,785 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2099 ms
+[18 Nov 2025 22:35:15,976 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 22:36:22,489 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 22:36:22,516 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 22:36:22,516 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 22:36:22,608 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 22:36:22,608 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2374 ms
+[18 Nov 2025 22:36:23,885 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 22:46:03,880 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 22:46:03,917 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 22:46:03,917 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 22:46:04,008 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 22:46:04,008 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3104 ms
+[18 Nov 2025 22:46:05,378 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:00:09,791 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:00:09,876 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:00:09,876 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:00:09,994 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:00:09,997 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2420 ms
+[18 Nov 2025 23:00:11,991 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:06:17,999 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:06:18,033 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:06:18,035 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:06:18,344 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:06:18,377 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2260 ms
+[18 Nov 2025 23:06:20,612 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:14:41,080 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:14:41,121 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:14:41,122 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:14:41,251 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:14:41,253 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2517 ms
+[18 Nov 2025 23:14:42,712 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:28:45,291 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:28:45,324 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:28:45,325 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:28:45,413 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:28:45,413 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2376 ms
+[18 Nov 2025 23:28:46,951 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:32:33,534 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:32:33,573 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:32:33,574 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:32:33,675 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:32:33,675 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2334 ms
+[18 Nov 2025 23:32:35,093 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:34:54,873 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:34:54,907 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:34:54,908 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:34:55,016 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:34:55,017 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2299 ms
+[18 Nov 2025 23:34:57,517 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:38:30,942 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:38:30,967 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:38:30,967 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:38:31,045 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:38:31,050 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3305 ms
+[18 Nov 2025 23:38:33,042 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:41:19,238 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:41:19,298 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:41:19,299 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:41:19,418 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:41:19,426 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2712 ms
+[18 Nov 2025 23:41:21,171 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:44:31,997 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:44:32,028 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:44:32,028 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:44:32,182 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:44:32,187 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3017 ms
+[18 Nov 2025 23:44:34,113 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[18 Nov 2025 23:50:33,114 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[18 Nov 2025 23:50:33,151 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[18 Nov 2025 23:50:33,151 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[18 Nov 2025 23:50:33,244 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[18 Nov 2025 23:50:33,246 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2078 ms
+[18 Nov 2025 23:50:34,989 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:04:44,407 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:04:44,451 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:04:44,451 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:04:44,571 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:04:44,575 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2297 ms
+[19 Nov 2025 00:04:46,249 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:24:00,074 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:24:00,117 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:24:00,118 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:24:00,222 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:24:00,226 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2347 ms
+[19 Nov 2025 00:24:01,808 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:29:11,934 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:29:11,982 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:29:11,982 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:29:12,111 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:29:12,117 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3854 ms
+[19 Nov 2025 00:29:13,648 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:31:21,687 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:31:21,715 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:31:21,715 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:31:21,805 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:31:21,805 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2088 ms
+[19 Nov 2025 00:31:23,475 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:32:53,158 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:32:53,193 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:32:53,194 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:32:53,294 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:32:53,297 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2900 ms
+[19 Nov 2025 00:32:54,593 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:35:48,047 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:35:48,096 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:35:48,096 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:35:48,176 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:35:48,183 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3331 ms
+[19 Nov 2025 00:35:49,555 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:37:05,042 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:37:05,072 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:37:05,073 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:37:05,193 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:37:05,193 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2937 ms
+[19 Nov 2025 00:37:06,530 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:45:35,588 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:45:35,644 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:45:35,645 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:45:35,829 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:45:35,833 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3041 ms
+[19 Nov 2025 00:45:38,214 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:47:28,750 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:47:28,875 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:47:28,878 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:47:29,140 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:47:29,155 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3642 ms
+[19 Nov 2025 00:47:32,360 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:50:16,204 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:50:16,237 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:50:16,237 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:50:16,333 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:50:16,336 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2696 ms
+[19 Nov 2025 00:50:17,998 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 00:54:22,237 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 00:54:22,272 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 00:54:22,273 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 00:54:22,398 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 00:54:22,400 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2488 ms
+[19 Nov 2025 00:54:23,861 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[19 Nov 2025 23:59:56,635 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[19 Nov 2025 23:59:56,681 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[19 Nov 2025 23:59:56,682 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[19 Nov 2025 23:59:56,793 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[19 Nov 2025 23:59:56,796 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2408 ms
+[19 Nov 2025 23:59:58,500 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 00:40:50,715 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 00:40:50,752 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 00:40:50,753 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 00:40:50,874 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 00:40:50,875 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2228 ms
+[20 Nov 2025 00:40:52,355 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 00:42:25,714 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 00:42:25,737 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 00:42:25,738 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 00:42:25,827 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 00:42:25,830 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2592 ms
+[20 Nov 2025 00:42:27,703 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 00:45:39,591 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 00:45:39,625 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 00:45:39,625 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 00:45:39,726 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 00:45:39,726 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2317 ms
+[20 Nov 2025 00:45:41,715 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 00:51:51,077 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 00:51:51,117 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 00:51:51,119 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 00:51:51,215 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 00:51:51,221 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2254 ms
+[20 Nov 2025 00:51:52,689 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 01:01:29,344 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 01:01:29,383 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 01:01:29,383 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 01:01:29,475 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 01:01:29,475 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2432 ms
+[20 Nov 2025 01:01:30,925 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 01:24:28,116 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 01:24:28,147 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 01:24:28,147 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 01:24:28,257 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 01:24:28,257 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2085 ms
+[20 Nov 2025 01:24:29,618 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 01:41:29,382 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 01:41:29,397 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 01:41:29,397 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 01:41:29,488 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 01:41:29,491 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1965 ms
+[20 Nov 2025 01:41:30,713 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 02:35:40,559 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 02:35:40,601 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 02:35:40,602 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 02:35:40,690 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 02:35:40,693 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2553 ms
+[20 Nov 2025 02:35:42,277 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 08:38:02,086 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 08:38:02,102 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 08:38:02,102 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 08:38:02,179 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 08:38:02,195 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2071 ms
+[20 Nov 2025 08:38:03,656 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 09:16:44,519 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 09:16:44,554 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 09:16:44,554 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 09:16:44,664 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 09:16:44,679 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 1971 ms
+[20 Nov 2025 09:16:46,465 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 09:28:40,703 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 09:28:40,735 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 09:28:40,735 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 09:28:40,820 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 09:28:40,823 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2428 ms
+[20 Nov 2025 09:28:42,173 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 11:03:46,129 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 11:03:46,165 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 11:03:46,166 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 11:03:46,245 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 11:03:46,247 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 3227 ms
+[20 Nov 2025 11:03:47,601 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 22:30:00,546 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 22:30:00,589 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 22:30:00,590 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 22:30:00,714 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 22:30:00,718 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2455 ms
+[20 Nov 2025 22:30:02,507 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 22:41:54,658 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 22:41:54,684 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 22:41:54,684 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 22:41:54,764 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 22:41:54,766 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2057 ms
+[20 Nov 2025 22:41:56,055 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 23:05:29,228 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 23:05:29,263 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 23:05:29,264 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 23:05:29,366 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 23:05:29,369 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2331 ms
+[20 Nov 2025 23:05:30,978 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[20 Nov 2025 23:29:41,476 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[20 Nov 2025 23:29:41,526 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[20 Nov 2025 23:29:41,526 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[20 Nov 2025 23:29:41,623 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[20 Nov 2025 23:29:41,626 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2213 ms
+[20 Nov 2025 23:29:43,136 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 04:51:42,740 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 04:51:42,771 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 04:51:42,772 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 04:51:42,863 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 04:51:42,868 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2290 ms
+[21 Nov 2025 04:51:44,400 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 09:57:00,961 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 09:57:00,995 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 09:57:00,996 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 09:57:01,124 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 09:57:01,131 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2210 ms
+[21 Nov 2025 09:57:02,664 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 09:57:28,978 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 09:57:29,038 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 09:57:29,039 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 09:57:29,244 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 09:57:29,247 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2856 ms
+[21 Nov 2025 09:57:31,196 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 14:19:47,013 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 14:19:47,053 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 14:19:47,054 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 14:19:47,162 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 14:19:47,169 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2252 ms
+[21 Nov 2025 14:19:48,833 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 15:47:21,283 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 15:47:21,318 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 15:47:21,319 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 15:47:21,464 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 15:47:21,468 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2502 ms
+[21 Nov 2025 15:47:23,026 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 17:06:05,915 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 17:06:05,947 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 17:06:05,948 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 17:06:06,049 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 17:06:06,050 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2200 ms
+[21 Nov 2025 17:06:07,479 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
+[21 Nov 2025 17:11:03,683 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat initialized with port 8080 (http)
+[21 Nov 2025 17:11:03,712 INFO  StandardService -DirectJDKLog.java]- Starting service [Tomcat]
+[21 Nov 2025 17:11:03,715 INFO  StandardEngine -DirectJDKLog.java]- Starting Servlet engine: [Apache Tomcat/10.1.43]
+[21 Nov 2025 17:11:03,800 INFO  [/] -DirectJDKLog.java]- Initializing Spring embedded WebApplicationContext
+[21 Nov 2025 17:11:03,814 INFO  ServletWebServerApplicationContext -ServletWebServerApplicationContext.java]- Root WebApplicationContext: initialization completed in 2071 ms
+[21 Nov 2025 17:11:05,316 INFO  TomcatWebServer -TomcatWebServer.java]- Tomcat started on port 8080 (http) with context path '/'
