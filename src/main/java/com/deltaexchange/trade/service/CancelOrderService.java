@@ -77,7 +77,7 @@ public class CancelOrderService {
     private Mono<JSONArray> getOpenOrders(int productId) {
         try {
             String endpoint = "/v2/orders";
-            String query = "state=open&product_id=" + productId;
+            String query = "state=open&product_id=" + productId+"&limit="+config.getGetOrderLimit();
 
             long ts = Instant.now().getEpochSecond();
             String fullEndpoint = endpoint + "?" + query;

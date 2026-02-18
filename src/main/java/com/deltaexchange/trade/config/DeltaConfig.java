@@ -30,5 +30,8 @@ public class DeltaConfig {
 
      @Value("${delta.api.productid}")
     private String productId;
+
+    @Value("${delta.api.getorderlimit}")
+    private String getOrderLimit;
 }
 

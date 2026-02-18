@@ -39,7 +39,7 @@ public class GetOpenOrdersService {
             String endpoint = "/v2/orders";
 
             // Query params for product BTC futures product_id=27
-            String query = "?product_ids="+config.getProductId();
+            String query = "?product_ids="+config.getProductId()+"&limit="+config.getGetOrderLimit();
 
             long timestamp = Instant.now().getEpochSecond();
 
